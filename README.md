@@ -1,3 +1,3 @@
 # Plantcare-AI
-app.py is the main file
-follow instructions to run the project
+1)app.py is the main file
+2)follow instructions to run the project
