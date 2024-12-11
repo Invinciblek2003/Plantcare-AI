@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlantCare AI</title>
+  <link rel="stylesheet" href="static\css\styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="\" class="active">Home</a></li>
+        <li><a href="templates\explore.html" class="active">Explore More</a></li>
+        <li><a href="templates\contact.html" class="active">Contact Us</a></li>
+        <li><a href="templates\login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <div class="hero-section">
+      <h1>PlantCare AI: An AI-based solution for plant disease diagnosis and assistance</h1>
+      <p>Buddy of your plant! Let's Go! => Check status :)</p>
+      <form action="/submit" method="POST" enctype="multipart/form-data">
+        <div class="upload-area">
+          <input type="file" name="plantImage" accept="image/*" required>
+          <button type="submit">Detect Disease</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PlantCare AI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
