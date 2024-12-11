@@ -1,0 +1,7 @@
+1)install env in terminal
+-pass app.py code to ai tool and ask for installing dependencies
+2)Install all the dependencies
+3)start environment in terminal
+.\name of env\Scripts\activate
+4)python app.py
+5)After use deactivate by using command deactivate in terminal
