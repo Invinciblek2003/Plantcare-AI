@@ -1,0 +1,245 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to right, #76b852, #8DC26F);
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Header and Navigation Bar */
+header {
+    background: #28a745;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #28a745;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    background-color: #218838;
+    border-radius: 5px;
+}
+
+/* Hero Section (Index Page) */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e9f7ef;
+    border: 1px solid #c3e6cb;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #155724;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#plantImage {
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#detectButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#detectButton:hover {
+    background-color: #218838;
+}
+
+/* Explore Section */
+.explore-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.explore-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+.plant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plant-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.plant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.plant-card-header {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.plant-card-body {
+    padding: 10px;
+    font-size: 0.9rem;
+    display: none;
+    text-align: left;
+}
+
+.plant-card-body ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.show-more-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.show-more-btn:hover {
+    background: #218838;
+}
+
+.plant-card.expanded .plant-card-body {
+    display: block;
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #8DC26F, #76b852);
+}
+
+.login-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-card button:hover {
+    background: #218838;
+}
+
+.login-card .register-link {
+    color: #28a745;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.login-card .register-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 50px;
+}
