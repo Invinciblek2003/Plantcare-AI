@@ -5,7 +5,8 @@
 # 🛠️ Technologies Used
 ### <ins>Frontend:</ins>
 ### HTML5
-### CSS3 - A utility-first CSS framework for rapidly building custom designs.
+### CSS3 
+### JavaScript
 
 ### <ins>Backend/Database:</ins> 
 ### Flask API
